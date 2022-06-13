@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Teko:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Teko', Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    letter-spacing: .05em;
+    font-family: Helvetica, sans-serif;
+    margin-top: .8em;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section-title {
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Presentation Section */
+.presentation div {
+    margin-top: 10em;
+    margin-right: 17em;
+}
+
+#presentation {
+    background-image: url(Assets/xadrez-bg_edit.jpg);
+    background-size: cover;
+    background-position: center left;
+    position: relative;
+    z-index: 1;
+}
+
+#presentation h1 {
+    display: flex;
+    width: fit-content;
+    font-size: 3em;
+    letter-spacing: .1rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s linear forwards;
+}
+
+#presentation h1:nth-child(1) {
+    animation-delay: .85s;
+}
+
+#presentation h1:nth-child(2) {
+    animation-delay: 1.85s;
+}
+
+#presentation .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #9AB0BF;
+    border: 2px solid #9AB0BF;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    transition: .4s ease;
+    transition-property: background-color, color;
+}
+
+#presentation .cta:hover {
+    background-color: #9AB0BF;
+    color: #470806;
+    font-weight: bold;
+}
+
+#creditPhoto {
+    font-size: 1.2em;
+    color: #c0bfbf;
+    opacity: .7;
+    margin-top: 8em;
+}
+
+#creditPhoto span {
+    font-weight: bold;
+}
+
+#presentation h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    background-color: #9AB0BF;
+}
+
+#presentation h1:nth-child(1) span {
+    animation-delay: .5s;
+}
+
+#presentation h1:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+
+#presentation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+/* Project Section */
+#portfolio {
+    background-color: #470806;
+}
+
+#portfolio .portfolio {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#portfolio nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#portfolio nav a {
+    color: #9AB0BF;
+}
+
+#portfolio nav a:hover {
+    color: #2785c4;
+}
+
+#portfolio .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#portfolio .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 5px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#portfolio .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: linear-gradient(60deg, #2f3e46 0%, #52796f 100%);
+    color: white;
+}
+
+#portfolio .project-info h1 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+}
+
+#portfolio .project-info h2 {
+    font-size: 1.8em;
+}
+
+#portfolio .project-info p {
+    font-size: 1.3em;
+}
+
+#portfolio .project-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .project-img::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #2f3e46 0%, #52796f 100%);
+    opacity: .5;
+    transition: 1s ease;
+}
+
+#portfolio .project-item:hover .project-img img {
+    transform: scale(1.1);
+}
+#portfolio .project-item:hover .project-img::after {
+    opacity: 0;
+}
+
+#portfolio .project-img img {
+    transition: 1s ease;
+}
+
+/* Footer Section */
+footer div {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    background-color: #470806;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+footer h1 {
+    display: flex;
+    color: white;
+    font-size: 3em;
+    letter-spacing: .025em;
+}
+footer a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #9AB0BF;
+    border: 2px solid #9AB0BF;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    transition: .4s ease;
+    transition-property: background-color, color;
+}
+
+footer a:hover {
+    background-color: #9AB0BF;
+    color: #470806;
+    font-weight: bold;
+}
+
+/* Keyframes */
+@keyframes text_reveal {
+    100% {
+        color: rgb(224, 224, 224);
+    }
+}
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+/* Media Query */
+@media only screen and (min-width: 768px) {
+    #portfolio .project-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 90%;
+        border-radius: 0;
+    }
+
+    #portfolio .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    #portfolio .all-projects .project-info {
+        height: 100%;
+    }
+
+    #portfolio .all-projects .project-img {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #portfolio .header {
+        width: 400px;    
+    }
+
+    #portfolio .header .section-title {
+        letter-spacing: .05em;    
+    }
+    
+    #portfolio .project-item {
+        width: 400px;
+    }
+
+    #portfolio .all-projects .project-info {
+        width: 100%;
+    }
+
+    #portfolio .all-projects .project-img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        justify-content: flex-start;
+    }
+
+    .presentation div {
+        margin-right: 0;
+        margin-left: 7em;
+    }
+}

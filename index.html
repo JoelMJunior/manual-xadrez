@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Xadrez | Pequeno manual</title>
+    <meta name="description" content="Apresentação do jogo de xadrez, suas peças e movimentação">
+    <meta name="keywords" content="xadrez, peças, movimento, tutorial, manual">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <section id="presentation">
+        <div class="presentation container">
+            <div>
+                <h1>Pequeno manual<span></span></h1>
+                <h1>do jogo de Xadrez<span></span></h1>
+                <a href="index.html#portfolio" type="button" class="cta">Começar</a>
+                <p id="creditPhoto">Foto por <span>Tima Miroshnichenko</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio container">
+            <header class="portfolio header">
+                <h1 class="section-title"><span>Movimento das peças</span></h1>
+                <nav>
+                    <h2><a href="#pawn-item">Peão</a></h2>
+                    <h2><a href="#knight-item">Cavalo</a></h2>
+                    <h2><a href="#bishop-item">Bispo</a></h2>
+                    <h2><a href="#rook-item">Torre</a></h2>
+                    <h2><a href="#queen-item">Dama</a></h2>
+                    <h2><a href="#king-item">Rei</a></h2>
+                </nav>
+            </header>
+            <main class="all-projects">
+                <div class="project-item" id="pawn-item">
+                    <article class="project-info">
+                        <h1>Peão</h1>
+                        <h2>Valor: 1 ponto</h2>
+                        <p>O Peão move-se em coluna (vertical) somente para a frente e uma casa (se estiver na casa
+                            inicial, pode mover duas casas), nunca para trás. Quando
+                            um peão alcança a última fileira do tabuleiro (fileira 8 para as brancas ou 1 para as
+                            pretas) ele é promovido, tornando-se uma Torre, Bispo, Cavalo ou Dama, conforme o desejo do
+                            jogador.</p>
+                    </article>
+                    <figure class="project-img" id="pawn-img">
+                        <img src="Assets/pawn.jpg" alt="imagem de um peão">
+                    </figure>
+                </div>
+                <div class="project-item" id="knight-item">
+                    <article class="project-info">
+                        <h1>Cavalo</h1>
+                        <h2>Valor: 3 pontos</h2>
+                        <p>O movimento do Cavalo é em "forma de L", ou seja, anda duas casas na horizontal ou vertical e
+                            depois uma casa na vertical ou horizontal, ou vice-versa. O cavalo pode saltar sobre
+                            qualquer peça sua ou do adversário. A captura ocorre quando uma peça adversária se encontra
+                            na casa final do movimento realizado pelo cavalo.</p>
+                    </article>
+                    <figure class="project-img">
+                        <img src="Assets/knight.jpg" alt="imagem de um cavalo">
+                    </figure>
+                </div>
+                <div class="project-item"  id="bishop-item">
+                    <article class="project-info">
+                        <h1>Bispo</h1>
+                        <h2>Valor: 3 pontos</h2>
+                        <p>O Bispo se movimenta nas direções diagonais, ou seja, na direção das casas da mesma cor. Ele
+                            pode mover quantas casas desejar pelas diagonais, porém, apenas em um sentido (em cada
+                            jogada).
+                            Existe o bispo da casa preta e o bispo da casa branca, e os mesmos não podem mudar de cor
+                            durante o jogo.</p>
+                    </article>
+                    <figure class="project-img">
+                        <img src="Assets/bishop.jpg" alt="imagem de um bispo">
+                    </figure>
+                </div>
+                <div class="project-item" id="rook-item">
+                    <article class="project-info">
+                        <h1>Torre</h1>
+                        <h2>Valor: 5 pontos</h2>
+                        <p>A Torre se movimenta nas direções ortogonais, isto é, pelas linhas (horizontais) e colunas
+                            (verticais), não podendo se mover pelas diagonais. Ela pode mover quantas casas desejar
+                            pelas colunas e linhas, porém, apenas em um sentido em cada jogada.</p>
+                    </article>
+                    <figure class="project-img">
+                        <img src="Assets/rook.jpg" alt="imagem de uma torre">
+                    </figure>
+                </div>
+                <div class="project-item" id="queen-item">
+                    <article class="project-info">
+                        <h1>Dama</h1>
+                        <h2>Valor: 9 pontos</h2>
+                        <p>A Dama é a peça mais poderosa, pois pode movimentar-se quantas casas quiser ou puder, na
+                            diagonal, vertical ou horizontal, porém, apenas em um sentido em cada jogada, a dama anda
+                            com os movimentos de todas as outras peças (exceto o cavalo), andando quantas
+                            casas quiser.</p>
+                    </article>
+                    <figure class="project-img">
+                        <img src="Assets/queen.jpg" alt="imagem de uma dama">
+                    </figure>
+                </div>
+                <div class="project-item" id="king-item">
+                    <article class="project-info">
+                        <h1>Rei</h1>
+                        <h2>Valor: indefinido</h2>
+                        <p>O Rei pode se mover em todas as direções somente uma casa de cada vez, desde que o movimento
+                            não seja para uma casa ameaçada por uma peça adversária. O rei também pode capturar qualquer
+                            peça adversária, desde que a mesma não tenha outra peça defendendo-a. Um Rei nunca poderá
+                            dar xeque a outro Rei.</p>
+                    </article>
+                    <figure class="project-img">
+                        <img src="Assets/king.jpg" alt="imagem de um rei">
+                    </figure>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h1>Agora tente jogar online</h1>
+            <a href="https://www.chess.com/play/online" target="_blanket">Chess.com</a>
+        </div>
+    </footer>
+</body>
+
+</html>
