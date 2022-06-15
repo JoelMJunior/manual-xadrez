@@ -336,6 +336,7 @@ footer a:hover {
 
     #portfolio .all-projects .project-img {
         width: 100%;
+        flex-basis: auto;
     }
 }
 
